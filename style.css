@@ -1,0 +1,315 @@
+section {
+  background-image: url(12.jpeg);
+  background-attachment: local;
+  
+}
+.linkid{
+  text-decoration: none;
+  color: white;
+}
+.glow-on-hover {
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+#DM{
+  background-color:transparent;
+  border-radius:40%;
+  border-color: transparent;
+  height: 50px;
+  width: 60px;
+}
+.tit {
+  font-size: 120px;
+  font-style: oblique;
+  color: rgb(235, 196, 137);
+  text-align: center;
+}
+.cent {
+  margin: auto;
+  background-color: rgb(48, 61, 241);
+  font-size: 60px;
+  color: azure;
+  width: 66%;
+}
+.pw {
+  font-size: 30px;
+  color: rgb(224, 202, 202);
+}
+.container-fluid{
+  background-color:transparent;
+  
+}
+#list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+  padding:10px;
+}
+
+  img {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
+  
+  .container-i {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid #000;
+  }
+  .container-i img {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  #nav{
+    display:none;
+    
+}
+#c-navbar{
+    display:none;
+}
+  @media screen and (max-width:500px){
+    .container-fluid{
+        display:none;
+    }
+
+    #nav{
+       display:block;
+       float:right;
+       background-color:rgb(8, 81, 240);
+       border-radius:50%;
+       border-color: gb(8, 81, 240);
+   }
+   #c-navbar{
+       display:block;
+   }
+   #list{
+       display:flex;
+       flex-direction:column;
+   }
+  
+
+}
+
+.fond{
+  background-color: rgb(198, 229, 238);
+}
+
+
+.dark-m{
+  background-color:black;
+  color: white;
+  border: 1px solid black;
+ 
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+.titre {
+  font-size: 40px;
+  font-style: oblique;
+  color: rgb(32, 32, 107);
+  font-family: cursive;
+}
+#M {
+  color: rgb(54, 56, 201);
+}
+ul{
+  list-style: none;
+}
+
+h3{color: rgb(29, 9, 141);}
+
+
+
+
+.para {
+  font-style: oblique;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.sect {
+  background-color: rgb(158, 158, 151);
+}
+
+.text-center {
+  text-align: center;
+}
+.tit {
+  font-size: 80px;
+  font-style: oblique;
+  color: rgb(235, 196, 137);
+  text-align: center;
+}
+
+
+#short-link {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#in {
+  background-color: black;
+}
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+#space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+p {
+  color: azure;
+}
+.fle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 2px solid blue;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  box-decoration-break: slice;
+  background-color: rgb(241, 241, 241, 0.5);
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+ 
+}
+
